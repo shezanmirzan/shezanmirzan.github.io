@@ -23,6 +23,46 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <style>
+  /* details summary::-webkit-details-marker {
+    background: red;
+    color: #fff;
+    font-size: 100%;
+  }
+
+  summary::-webkit-details-marker {
+  display: none
+  }
+summary:after {
+  background: #fff;
+  border-radius: 5px;
+  content: "+";
+  color: black;
+  float: left;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0px 10px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 20px;
+}
+details[open] summary:after {
+  content: "-";
+} */
+details {border: 1px solid #E1E1E1; border-radius: 5px; box-shadow: 0 1px 4px rgba(0, 0, 0, .4); color: #363636; margin: 0 0 .4em; padding: 0%;}
+details[open] {background: #E1E1E1;}
+summary {background: -webkit-linear-gradient(top, #FAFAFA 100%); border-radius: 5px; cursor: pointer; font-size: 0.8em; font-weight: bold; margin: -1%; padding: 8px 0; position: relative; width: 102%;}
+summary:hover, details[open] summary {background: #E1E1E1;}
+summary::-webkit-details-marker {display: none}
+summary:before{border-radius: 5px; content: "+"; width: 100px; color: #363636; display: block; float: left; font-size: 1em; font-weight: bold; margin: -2px 10px 0 10px; padding: 0; text-align: center; width: 20px;}
+details[open] summary:before {content: "-"; margin-top: -4px;}
+#prj{
+  background: -webkit-linear-gradient(top, #FAFAFA 100%); border-radius: 5px; cursor: pointer; font-size: 1.5em; margin: -1%; padding: 8px 0; position: relative; width: 102%;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  text-transform: uppercase;
+  font-weight: 500;
+}
+  </style>
 
 </head>
 
@@ -152,20 +192,20 @@
             <h3 class="mb-0">Senior Software Engineer</h3>
             <div class="subheading mb-3">Samsung Research Institute Bangalore</div>
             <details>
-              <summary>Pattern Analysis for Device Usage Statistics</summary>
+              <summary font-size: 1.5em>Pattern Analysis for Device Usage Statistics</summary>
               <ul>
                 <li>Mined frequent device usage patterns using Apache Spark Framework for users from the SmartThings data on AWS EMR instances. Sharded Data on MongoDB to enable efficient GDPR implementation.</li>
                 <li>Implemented end-to-end Scala application running on Spark framework by using association rule mining. Project commercialized in 2019 with the release of Samsung Galaxy Note 10.</li>
                </ul>
             </details>
             <details>
-              <summary>Lightweight User Presence Detection backend on powered Embedded devices </summary>
+              <summary font-size: 1.5em>Lightweight User Presence Detection backend on powered Embedded devices </summary>
               <ul>
                 <li>Designed Neural Network based Voice Activity Detection in C++ on TizenOS to detect human presence at Home for Smart Speakers. Used MRCG features and Tensorflow Lite to optimize time and memory. Conferred with performance award for reducing inference time by 5-folds.</li>
                </ul>
             </details>
             <details>
-              <summary>Behavioral AI framework to enable user personalization in Social Robots</summary>
+              <summary font-size: 1.5em>Behavioral AI framework to enable user personalization in Social Robots</summary>
               <ul>
                 <li>Designed and Implemented Behavioral Intelligence framework in C++/Python by jointly employing Neural Network alongside Q- Learning for implementation of User Personalization among robots to achieve 3X faster convergence with twice the accuracy against standard Reinforcement Learning Techniques.</li>
                </ul>
@@ -335,7 +375,7 @@
         <h2 class="mb-5">Projects</h2>
 
         <details>
-          <summary class="subheading mb-3">OSMI Mental Health Data Exploratory Data Analysis</summary>
+          <summary id="prj">OSMI Mental Health Data Exploratory Data Analysis</summary>
           <ul>
             <li>Exploratory Data Analysis on the OSMI Mental Health Data to understand how mental health is viewed in the Tech industry, the spread of mental disorders among the employees and to gauge the system present to tackle these conditions. </li>
             <li>D3 based visualizations based on the survey results of 3 different years implemented to gain a multi-faceted view of our data. Site hosted at <a href="https://shezanmirzan.github.io/DataVis-Mental-Health/">shezanmirzan.github.io/DataVis-Mental-Health</a></li>
@@ -343,7 +383,7 @@
         </details>
 
         <details>
-          <summary class="subheading mb-3">Deep Multiple Instance Leaning based Video Classification</summary>
+          <summary id="prj">Deep Multiple Instance Leaning based Video Classification</summary>
           <ul>
             <li>Developed Anomaly detection algorithm for classifying real - Surveillance videos that spanned across different scenes.</li>
             <li>Converted the classification problem to a regression task by extracting C3D features and feeding it to deep Multiple Instance
@@ -353,7 +393,7 @@
         </details>
 
         <details>
-          <summary class="subheading mb-3">Tracking of Multiple Skin-Colored Objects Under Occlusion</summary>
+          <summary id="prj">Tracking of Multiple Skin-Colored Objects Under Occlusion</summary>
           <ul>
             <li>Developed Real-time tracking of skin coloured objects framework in MATLAB using object hypothesis tracking. removal and
               synthesis.</li>
